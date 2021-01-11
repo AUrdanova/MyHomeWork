@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyHomeWork</string>
+    <string name="app_in_name">Вход</string>
+    <string name="app_in_after">Register app</string>
+    <string name="text_bottom">Войдите в свою учетную запись</string>
+    <string name="btnSignIn">Войти</string>
+    <string name="btnRegister">Зарегистрироваться</string>
+</resources>
