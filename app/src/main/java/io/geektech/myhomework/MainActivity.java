@@ -31,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
 
         findViewById(R.id.btnSighIn).setOnClickListener(v -> {
-            if (login.getText().length() == 0 && password.getText().length() == 0) {
-                Toast.makeText(MainActivity.this, "Введите логин или пароль", Toast.LENGTH_SHORT).show();
-            } else {
+            if (login.getText().toString().isEmpty() || password.getText().toString().isEmpty()) {
+                Toast.makeText(MainActivity.this,"Введите логин или пароль" , Toast.LENGTH_SHORT).show();
+            } else if (password.length() > 6)
                 Toast.makeText(MainActivity.this, "Успешно", Toast.LENGTH_SHORT).show();
+            else {
+                Toast.makeText(MainActivity.this, "Пароль должен содержать более 6 символов", Toast.LENGTH_SHORT).show();
             }
         });
     }
